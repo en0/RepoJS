@@ -1,0 +1,35 @@
+{
+  "name": "repojs",
+  "version": "0.1.0",
+  "description": "Basic Repository",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/en0/RepoJS.git"
+  },
+  "keywords": [
+    "repository",
+    "database"
+  ],
+  "author": "Ian Laird <irlaird@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/en0/RepoJS/issues"
+  },
+  "homepage": "https://github.com/en0/RepoJS#readme",
+  "devDependencies": {
+    "@types/knex": "^0.14.15",
+    "@types/reflect-metadata": "^0.1.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "knex": "^0.15.0",
+    "reflect-metadata": "^0.1.12"
+  }
+}
