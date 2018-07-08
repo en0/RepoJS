@@ -28,7 +28,7 @@ export class Repository<T> implements IRepository<T> {
         const record = this.mapper.fromEntity(entity);
         const query = knex(this.table.name);
         this.table.primary.forEach((v) => query.where(v, record[v]));
-        query.delete();
+        await query.delete();
     }
 
     public async update(entity: T): Promise<void> {
@@ -36,7 +36,7 @@ export class Repository<T> implements IRepository<T> {
         const record = this.mapper.fromEntity(entity);
         const query = knex(this.table.name);
         this.table.primary.forEach((v) => query.where(v, record[v]));
-        query.update(record);
+        await query.update(record);
     }
 
     public async getById(id: any): Promise<T> {

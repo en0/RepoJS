@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "knex": "^0.15.0",
+    "mysql": "^2.15.0",
+    "repojs": "^0.1.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/knex": "^0.14.15",
+    "@types/uuid": "^3.4.3",
+    "ts-node": "^7.0.0"
+  }
+}
